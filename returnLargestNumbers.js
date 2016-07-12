@@ -1,11 +1,12 @@
 function largestOfFour(arr) {
     // You can do this!
     var newArr = [];
+
     arr.forEach(function (val) {
         num = val.reduce(function (a, b) {
             return (a>b)?a:b;
         });
-        console.log(num);
+
         newArr.push(num);
     });
     return newArr;
